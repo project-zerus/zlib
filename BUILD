@@ -2,6 +2,9 @@ package(default_visibility = ["//visibility:public"])
 
 cc_library(
   name = "z",
+  hdrs = [
+    "zlib.h",
+  ],
   srcs = [
     "adler32.c",
     "compress.c",
@@ -18,19 +21,6 @@ cc_library(
     "trees.c",
     "uncompr.c",
     "zutil.c",
-  ],
-  hdrs = [
-    "crc32.h",
-    "deflate.h",
-    "gzguts.h",
-    "inffast.h",
-    "inffixed.h",
-    "inflate.h",
-    "inftrees.h",
-    "trees.h",
-    "zconf.h",
-    "zlib.h",
-    "zutil.h",
   ],
   includes = [
     ".",
