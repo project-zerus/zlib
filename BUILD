@@ -1,7 +1,8 @@
-package(default_visibility = ["//visibility:public"])
+licenses(['notice'])
 
 cc_library(
   name = "z",
+  visibility = ['//visibility:public'],
   hdrs = [
     "zlib.h",
   ],
