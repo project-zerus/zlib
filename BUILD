@@ -3,9 +3,9 @@ licenses(['notice'])
 cc_library(
   name = "z",
   visibility = ['//visibility:public'],
-  hdrs = [
-    "zlib.h",
-  ],
+  hdrs = glob([
+    '*.h',
+  ]),
   srcs = [
     "adler32.c",
     "compress.c",
